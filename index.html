@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Library</h1>
+        <a href="#">
+            <img src="" alt="Github">
+        </a>
+    </header>
+    <main>
+        <nav>
+            <!-- <input type="search" id="searchbar"  placeholder="Search:"> -->
+             <p>Books</p>
+            <button onclick="openBookModal()">Add Book</button>
+        </nav>
+        <div class="books-container"></div>
+    </main>
+    <dialog>
+        <form method="dialog" id="book-form">
+            <div>
+                <input type="text" id="title" placeholder="Title">
+            </div>
+            <div>
+                <input type="text" id="author" placeholder="Author">
+            </div>
+            <div>
+                <input type="number" id="pages" placeholder="Pages">
+            </div>
+            <div>
+                <input type="checkbox" id="has-read">
+                <label for="has-read">Read</label>
+            </div>
+            <button>Add Book</button>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>
